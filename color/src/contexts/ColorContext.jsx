@@ -34,7 +34,7 @@ const ColorContextProvider = ({ children }) => {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: "Enter 6 times Color Name , Color Code and Group Name ",
+        text: "Enter 6 times Color Name and Color Code ",
       });
       return;
     }
@@ -45,7 +45,6 @@ const ColorContextProvider = ({ children }) => {
     const updatedDivs = [...divs, newDiv];
     setDivs(updatedDivs);
     localStorage.setItem("divs", JSON.stringify(updatedDivs));
-    // console.log("create",updatedDivs)
     setText("");
     setSelectedColor(null);
   };

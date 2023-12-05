@@ -27,9 +27,7 @@ const Detail = () => {
               Copy Color Code :
               <span onClick={handleCopy}> {detailItem.backgroundColor}</span>
             </h3>
-            {copySuccess && (
-              <p className="text-white mt-2 fs-1">Copied</p>
-            )}
+            {copySuccess && <p className="text-white mt-2 fs-1">Color Code Copied</p>}
           </div>
         </div>
       ) : (

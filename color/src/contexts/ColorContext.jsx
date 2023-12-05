@@ -9,7 +9,6 @@ const ColorContext = createContext();
 const ColorContextProvider = ({ children }) => {
   const [selectedColor, setSelectedColor] = useState(null);
   const [text, setText] = useState("");
-  const [groupName, setGroupName] = useState("");
   const [divs, setDivs] = useState([]);
   const [addedDivs, setAddedDivs] = useState([]);
 

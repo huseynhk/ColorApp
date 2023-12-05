@@ -54,24 +54,54 @@ input {
   text-transform: capitalize;
 }
 
-.tableColor{
+.tableColor {
   border: 2px solid black;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.tableColorDiv{
+.tableColorDiv {
   width: 33.3333%;
   border: 1px solid black;
 }
 
-.mainDiv{
+.mainDiv {
   display: flex;
   flex-wrap: wrap;
 }
 
-.colorDiv{
+.colorDiv {
   width: 16.5%;
   border: 1px solid black;
+  margin: 5px 0;
+}
+
+.detailPage {
+  height: 97.5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailPage span {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 700;
+}
+.activeLink {
+  color: rgb(255, 75, 105);
+}
+
+.Link {
+  color: rgb(0, 0, 155);
+}
+.Link:hover {
+  color: rgb(255, 75, 105);
+  transition: 0.5s ease-in-out;
 }

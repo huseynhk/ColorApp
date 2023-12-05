@@ -17,7 +17,6 @@ const Create = () => {
     createNewDiv,
     deleteDiv,
     saveDivsToLocalStorage,
-    groupName, setGroupName
   } = useColorContext();
 
   const inputRef = useRef(null);
@@ -35,7 +34,7 @@ const Create = () => {
 
   return (
     <>
-      <div className="colorDivs ">
+      <div className="colorDivs mt-4">
         <div className="d-flex justify-content-center align-items-center flex-wrap">
           {colors.map((color) => (
             <button
@@ -118,14 +117,6 @@ const Create = () => {
             </div>
 
             <div>
-              {/* <h4 className="my-3">Group Name</h4>
-              <input
-                type="text"
-                className="w-100 "
-                placeholder="Group Name"
-                value={groupName}
-                onChange={(e) => setGroupName(e.target.value)}
-              /> */}
 
               <button
                 className="rounded btn btn-success px-4 py-2 w-100 mt-3"

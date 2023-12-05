@@ -14,8 +14,8 @@ const ColorContextProvider = ({ children }) => {
   const [addedDivs, setAddedDivs] = useState([]);
 
   const navigate = useNavigate();
-  const isSaveDisabled = divs.length < 2;
-  const isAddDisabled = divs.length >= 2;
+  const isSaveDisabled = divs.length < 6;
+  const isAddDisabled = divs.length >= 6;
 
   const saveDivsToLocalStorage = () => {
     const updatedAddedDivs = [...addedDivs,  ...divs ];
